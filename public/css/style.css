@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 #canvas {
@@ -41,8 +42,18 @@
   border-radius: 2%;
 }
 
-h1, h2 {
+h1,
+h2 {
+  font-family: "Bebas Neue", cursive;
   color: white;
+  letter-spacing: 3px;
+}
+
+h1,
+h2 > span {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  letter-spacing: 2px;
 }
 
 .pp {
@@ -50,9 +61,355 @@ h1, h2 {
   height: 200px;
   border-radius: 50%;
   margin-bottom: 5%;
-  border-top: solid 6px green;  
+  border-top: solid 6px green;
   border-right: solid 6px green;
-  border-bottom: solid 6px #00dc66;  
-  border-left: solid 6px #00dc66;
+  border-bottom: solid 6px rgb(2, 0, 36);
+  border-left: solid 6px rgb(2, 0, 36);
+}
 
+.underline {
+  text-decoration: underline;
+}
+
+.h-services {
+  text-transform: uppercase;
+  font-size: 7rem;
+  font-weight: 300;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(2, 0, 36);
+  width: 100%;
+  height: 100%;
+}
+
+.services > h3 {
+  margin-bottom: 3rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  width: 250px;
+
+}
+
+.services-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.separation {
+  width: 2px;
+  height: 90px;
+  background: rgb(0, 176, 82);
+}
+
+.green {
+  color: rgb(0, 176, 82);
+}
+
+.h-span {
+  font-weight: 500;
+}
+.serv-p {
+  font-size: 1.7rem;
+}
+
+.p-contact {
+  font-size: 1.25rem;
+}
+
+.contact {
+  background: #00ae51;
+  background-image: -webkit-linear-gradient(top, #00ae51, #004d23);
+  background-image: -moz-linear-gradient(top, #00ae51, #004d23);
+  background-image: -ms-linear-gradient(top, #00ae51, #004d23);
+  background-image: -o-linear-gradient(top, #00ae51, #004d23);
+  background-image: linear-gradient(to bottom, #00ae51, #004d23);
+  -webkit-border-radius: 36;
+  -moz-border-radius: 36;
+  border-radius: 36px;
+  font-family: "Roboto";
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.contact:hover {
+  background: #138f4b;
+  background-image: -webkit-linear-gradient(top, #138f4b, #0e703a);
+  background-image: -moz-linear-gradient(top, #138f4b, #0e703a);
+  background-image: -ms-linear-gradient(top, #138f4b, #0e703a);
+  background-image: -o-linear-gradient(top, #138f4b, #0e703a);
+  background-image: linear-gradient(to bottom, #138f4b, #0e703a);
+  text-decoration: none;
+}
+
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+}
+
+a {
+  font-style: normal;
+  font-variant: normal;
+  text-decoration: none;
+}
+
+#whoiam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(2, 0, 36);
+  width: 100%;
+  height: 100%;
+}
+
+a > span {
+  background: white !important;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(2, 0, 36);
+  width: 100%;
+  height: 100%;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(2, 0, 36);
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 22px;
+  height: 22px;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+a > img {
+  margin-right: 10px;
+}
+
+.w-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.w-p {
+  width: 50%;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.m-li {
+  font-size: 2rem;
+}
+
+.network {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.h-whoami {
+  text-transform: uppercase;
+  font-size: 7rem;
+  font-weight: 300;
+}
+
+.linkedin {
+  border-radius: 50%;
+}
+
+.w-b {
+  width: 2px;
+  height: 420px;
+  background: rgba(0, 176, 82);
+
+  margin-top: 50px;
+}
+
+.fleche {
+  font-size: 7rem;
+  margin-left: 8px;
+  transform: rotate(90deg);
+  color: white;
+  text-decoration: none;
+}
+
+.fleche:hover {
+  color: white;
+}
+
+.box-fleche:hover {
+  background: rgba(105, 105, 105, 0.9);
+  border-radius: 50%;
+}
+
+.box-fleche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+  width: 7rem;
+  height: 7rem;
+}
+
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: white !important;
+}
+
+.fp-controlArrow.fp-next {
+  right: 8% !important;
+  border-color: transparent transparent transparent #00ae51 !important;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 8% !important;
+  border-color: transparent #00ae51 transparent transparent !important;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-folio {
+  margin-top: 38px;
+  text-transform: uppercase;
+  font-size: 7rem;
+  font-weight: 300;
+}
+
+.folio {
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 60px;
+  width: 900px;
+  height: 600px;
+  border: none !important;
+}
+
+.folio > img {
+  width: 100%;
+  height: 100%;
+}
+.fp-tableCell {
+  vertical-align: unset !important;
+}
+
+.content-folio {
+  width: 100%;
+  height: 180px;
+  flex: none !important;
+  background: rgba(58, 58, 58, 0.88);
+}
+
+.link {
+  background-color: #00ae51 !important;
+  border-color: #00ae51 !important;
+}
+
+.link > a {
+  background-color: unset !important;
+}
+
+.no-pic {
+  width: 30% !important;
+  height: 40% !important;
+  margin-bottom: 9%;
+  margin-inline: auto;
+}
+
+.lastone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(2, 0, 36) !important;
+  margin-top: 16%;
+  width: 70%;
+}
+
+#recommandations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  width: 100%;
+  height: 100%;
+}
+.h-recom {
+  text-transform: uppercase;
+  font-size: 7rem;
+  font-weight: 300;
+  margin-top: 100px;
+}
+
+.r-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 900px;
+  margin-top: 160px;
+}
+.r-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 380px;
+}
+
+.email {
+  font-size: 1.3rem;
+  margin-top:15px;
+}
+.entreprise {
+  width: 260px;
+  text-align: center;
 }

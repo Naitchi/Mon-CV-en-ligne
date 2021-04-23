@@ -6,32 +6,472 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="" />
     <title>CV Benjamin Clairotte</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--JS-->
+    <script
+      src="https://kit.fontawesome.com/3365aec9c9.js"
+      crossorigin="anonymous"
+    ></script>
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/fullpage.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div id="fullpage">
       <div class="section">
         <div class="presentation">
           <img class="pp" src="./img/pptemporaire.PNG" />
-
           <div class="presentation-content">
             <h1>Benjamin Clairotte</h1>
-            <h2>le développeur dont vous avez besoin !</h2>
+            <h2>
+              Le développeur dont <span class="underline">VOUS</span> avez
+              besoin !
+            </h2>
+          </div>
+          <div class="box-fleche">
+            <a class="fleche" href="#Qui_Suis-je">></a>
           </div>
         </div>
         <canvas id="canvas"></canvas>
       </div>
-      <div class="section"><img src="./img/1.jpg" /></div>
+      <div class="section">
+        <div id="whoiam">
+          <h3 class="h-whoami ">Qui suis-je <span class="green">?</span></h3>
+          <div class="w-section">
+            <p class="w-p">
+              Je m'appelle Benjamin Clairotte. Je suis un jeune homme de 20 ans
+              curieux de tout, j'ai fais mes étude de développement web sur
+              OpenClassroom.com. Site sur lequel j'ai pu apprendre a codé en:
+              hmtl, css, sass, js, node.js, API REST, bootstrap, SDL ,MongoDB et
+              aussi a utilisé git et github. On ne m'a pas appris que des
+              languages, mais aussi des notions importantes comme l'optimisation
+              de SEO et d'accécibilité d'un site web. Et je suis actuellement
+              sur le dernier projet de ma formation en train d'apprendre a
+              utilisé Vue.js et VueX. Une fois ma formation terminé,
+              j'obtiendrais un bac+2 validé par l'état et je serais à la
+              recherche d'une alternance pour continué une autre formation pour
+              cette fois si atteindre bac+4. Lors de ma formation je me suis
+              aussi entourer de gens extrement doué qui on participé a mon
+              apprentissage sur les logiciels photoshop et Sony Vegas 18.
+              Logiciels que je maitrise assez bien maintenant.
+            </p>
+            <div class="w-b green"></div>
+            <ul>
+              <li class="m-li">Résaux Sociaux</li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://twitter.com/BClairotte"
+                  class="network"
+                  ><img
+                    class="logo"
+                    src="./img/twitteremote.png"
+                    alt="Logo Twitter"
+                  />Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/naitchii/"
+                  class="network"
+                  ><img
+                    class="logo"
+                    src="./img/instagramemote.png"
+                    alt="Logo Instagram"
+                  />Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCTDnsk3ZuIIK-A0B5hCME3Q"
+                  class="network"
+                  ><img
+                    class="logo"
+                    src="./img/ytemote.png"
+                    alt="Logo Youtube"
+                  />Youtube</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/Naitchi"
+                  class="network"
+                  ><img
+                    class="logo"
+                    src="./img/GitHub_logo.png"
+                    alt="Logo Github"
+                  />Github</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/benjamin-clairotte-901881199/"
+                  class="network"
+                  ><img
+                    class="logo linkedin"
+                    src="./img/Logo_Linkedin.png"
+                    alt="Logo Linkedin"
+                  />Linkedin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div id="services">
+          <h3 class="h-services">
+            mes services<span class="h-span green">.</span>
+          </h3>
+          <div class="services-content">
+            <div class="group">
+              <i class="fas fa-code fa-6x"></i>
+              <p class="serv-p">Web Developement<span class="green">.</span></p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fas fa-layer-group fa-6x"></i>
+              <p class="serv-p">Graphisme<span class="green">.</span></p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fas fa-film fa-6x"></i>
+              <p class="serv-p">Montage<span class="green">.</span></p>
+            </div>
+          </div>
+          <div class="section-contact">
+            <p class="p-contact">
+              Concentrez vous sur ce qui est important,
+              <span class="green">je m'occupe de tout le reste</span> en accord
+              avec <span class="green">vos demandes</span>.
+            </p>
+            <a href="#Contact"><Btn class="contact">Contactez moi</Btn></a>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div id="portfolio">
+          <h3 class="h-folio">Portfolio<span class="green">.</span></h3>
+          <div class="slide">
+            <div class="flex">
+              <div class="card folio">
+                <img
+                  src="./img/card_P2.PNG"
+                  class="card-img-top"
+                  alt="site créé pour le projet 2 d'OpenClassroom"
+                />
+                <div class="card-body content-folio">
+                  <h5 class="card-title">Projet numéro 2 d'openclassroom</h5>
+                  <p class="card-text black">
+                    Projet numéro deux d'OpenClassroom consistant a créé un
+                    petit site a partir d'une maquette donné. A coder en HTML et
+                    CSS et faire pour qu'il soit eccessible depuis toutes les
+                    platformes.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://naitchi.github.io"
+                    class="btn btn-primary link"
+                    >Aller sur le site →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="flex">
+              <div class="card folio">
+                <img
+                  src="./img/card_P3.PNG"
+                  class="card-img-top"
+                  alt="site créé pour le projet 3 d'OpenClassroom"
+                />
+                <div class="card-body content-folio">
+                  <h5 class="card-title">Projet numéro 3 d'openclassroom</h5>
+                  <p class="card-text black">
+                    Projet numéro trois d'OpenClassroom consistant a créé un
+                    site a partir d'une maquette donné. A coder en HTML et en
+                    SASS avec des animation et faire pour qu'il soit eccessible
+                    depuis toutes les platformes tout commme le précedent.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://projet-3-oc-4c5e8.web.app/"
+                    class="btn btn-primary link"
+                    >Aller sur le site →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="flex">
+              <div class="card folio">
+                <img
+                  src="./img/card_P4.PNG"
+                  class="card-img-top"
+                  alt="site créé pour le projet 4 d'OpenClassroom"
+                />
+                <div class="card-body content-folio">
+                  <h5 class="card-title">Projet numéro 4 d'openclassroom</h5>
+                  <p class="card-text black">
+                    Projet numéro quatre d'OpenClassroom consistant a modifié un
+                    site déjà existant pour le rendre plus accessible a tout le
+                    monde. mais aussi pour facilité son accessiblilité via un
+                    moteur de recherche.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://projet-4-v1.web.app"
+                    class="btn btn-primary link"
+                    >Aller sur la premiere version du site →</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://projet-4-latest-version.web.app"
+                    class="btn btn-primary link"
+                    >Aller sur la version optimisé du site →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="flex">
+              <div class="card folio">
+                <img
+                  src="./img/card_P5.PNG"
+                  class="card-img-top"
+                  alt="site créé pour le projet 5 & 6 d'OpenClassroom"
+                />
+                <div class="card-body content-folio">
+                  <h5 class="card-title">
+                    Projet numéro 5 et 6 d'Openclassroom
+                  </h5>
+                  <p class="card-text black">
+                    Les Projet numéro 5 & 6 d'OpenClassroom consistent a utilisé
+                    une api côté frontend pour le 5 et créé l'api coté backend
+                    pour le projet 6. Pour réduire mes couts ces sites sont
+                    lancé manuellement quand je les utilisent ils ne sont donc
+                    pas disponible.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="flex">
+              <div class="card folio">
+                <img
+                  src="./img/City-No-Camera-icon.png"
+                  class="card-img-top no-pic"
+                  alt="site créé pour le projet 7 d'OpenClassroom"
+                />
+                <div class="card-body content-folio">
+                  <h5 class="card-title">
+                    Projet numéro 7 d'Openclassroom
+                  </h5>
+                  <p class="card-text black">
+                    Les Projet numéro sept d'OpenClassroom consistent a
+                    construire un réseau social avec VueJS et Vuex mais
+                    également SQL, pour avoir une base de donnée plus gérable.
+                    Ce projet est actuellement en cours et n'est donc pas encore
+                    disponible.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="flex">
+              <div class="card folio">
+                <img
+                  src="./img/miniatureNuzlockeSAD.png"
+                  class="card-img-top"
+                  alt="Miniature Youtube pour let's play pokémon"
+                />
+                <div class="card-body content-folio">
+                  <h5 class="card-title">
+                    Miniature Youtube pour let's play pokémon
+                  </h5>
+                  <p class="card-text black">
+                    Miniature créé pour Pwcca, un influeuceur twitch. j'ai donc
+                    repris une photo de lui pour créé cette Miniature avec
+                    toutes les informations concernant le let's play: le jeu et
+                    le challenge imposer. plusieurs version on été créé en
+                    changeant le visage pour mieux coller au contenu de chaque
+                    vidéo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="flex">
+              <div class="card folio">
+                <img
+                  src="./img/PlanningPwcca.png"
+                  class="card-img-top"
+                  alt="Création d'un planning Twitch"
+                />
+                <div class="card-body content-folio">
+                  <h5 class="card-title">
+                    Création d'un planning Twitch
+                  </h5>
+                  <p class="card-text black">
+                    Planning créé pour Pwcca. Créé de 0, j'ai essayer de faire
+                    en sorte que chaque créneau soit en lui meme une petite
+                    miniature. En essayant de varier le plus possible, comme
+                    pour les reportages où le fond change.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="flex">
+              <div class="card folio">
+                <img
+                  src="./img/ultraPucRT&Like.png"
+                  class="card-img-top"
+                  alt="Image de soutiens pour sa communauté"
+                />
+                <div class="card-body content-folio">
+                  <h5 class="card-title">
+                    Image de soutiens pour sa communauté. Elle a été créé a
+                    partir d'un template d'un personnage avec un drapeau et a
+                    été modifié pour sié a l'univers de Pwcca. Elle a été
+                    dimensionné de sorte a ce que l'algorithm twitter ne la
+                    coupe pas lors de la prévusialisation.
+                  </h5>
+                  <p class="card-text black"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="flex">
+              <div class="card lastone ">
+                <h4>
+                  Ce n'est évidemment pas tout, vous pouvez trouver d'autres
+                  montages photo sur mon instagram, ainsi que des montages
+                  vidéos sur mon youtube. Pour tout ce qui est code source des
+                  sites en présenté vous avez mon github.
+                </h4>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/naitchii/"
+                  class="network"
+                  ><img
+                    class="logo"
+                    src="./img/instagramemote.png"
+                    alt="Logo Instagram"
+                  />Instagram</a
+                >
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCTDnsk3ZuIIK-A0B5hCME3Q"
+                  class="network"
+                  ><img
+                    class="logo"
+                    src="./img/ytemote.png"
+                    alt="Logo Youtube"
+                  />Youtube</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/Naitchi"
+                  class="network"
+                  ><img
+                    class="logo"
+                    src="./img/GitHub_logo.png"
+                    alt="Logo Github"
+                  />Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- <h3>Recommandation</h3>-->
+        </div>
+      </div>
+      <div class="section">
+        <div id="recommandations">
+          <h3 class="h-recom">Recommandations<span class="green">.</span></h3>
+          <div class="r-content">
+            <div class="r-me">
+              <img class="pp" src="./img/ppPwcca.PNG" alt="Photo de Pwcca" />
+              <h4 class="nom">
+                Dylan bouvier <span class="green">alias</span> Pwcca
+              </h4>
+              <h5 class="entreprise">
+                Community manager chez Misfit, Streamer
+              </h5>
+              <p class="email">dyl.bouvier<span class="green">@</span>gmail.com</p>
+            </div>
+            <div class="r-me">
+              <img
+                class="pp"
+                src="./img/JoffreyPP.png"
+                alt="Photo de Joffrey"
+              />
+              <h4 class="nom">Joffrey Hernandez</h4>
+              <h5 class="entreprise">Mentor chez OpenClassroom</h5>
+              <p class="email">Joffrey.hernandez<span class="green">@</span>gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div id="contact">
+          <h3>contact</h3>
+        </div>
+      </div>
     </div>
+
     <!--JS-->
     <script src="./js/script.js"></script>
     <script src="./js/fullpage.js"></script>
     <script>
-      new fullpage("#fullpage");
+      new fullpage("#fullpage", {
+        licenceKey: "22615C3F-6C8040EC-84C76444-1B91B7D0",
+        navigation: true,
+        continuousHorizontal: true,
+        parallax: true,
+        scrollingSpeed: 1000,
+        continuousVertical: true,
+        scrollOverflow: true,
+        navigationTooltips: [
+          "Sommaire",
+          "Qui suis-je ?",
+          "Mes services",
+          "Portfolio",
+          "Recommandations",
+          "Contactez moi",
+        ],
+        anchors: [
+          "Sommaire",
+          "Qui_Suis-je",
+          "Mes_Services",
+          "Portefolio",
+          "Contact",
+        ],
+      });
     </script>
   </body>
 </html>
