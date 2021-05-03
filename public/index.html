@@ -31,7 +31,7 @@
     <div id="fullpage">
       <div class="section">
         <div class="presentation">
-          <img class="pp" src="./img/pptemporaire.PNG" />
+          <img class="pp" src="./img/PPNaitchitest.png" />
           <div class="presentation-content">
             <h1>Benjamin Clairotte</h1>
             <h2>
@@ -235,18 +235,20 @@
                     monde. mais aussi pour facilité son accessiblilité via un
                     moteur de recherche.
                   </p>
-                  <a
-                    target="_blank"
-                    href="https://projet-4-v1.web.app"
-                    class="btn btn-primary link"
-                    >Aller sur la premiere version du site →</a
-                  >
-                  <a
-                    target="_blank"
-                    href="https://projet-4-latest-version.web.app"
-                    class="btn btn-primary link"
-                    >Aller sur la version optimisé du site →</a
-                  >
+                  <div class="githublinks">
+                    <a
+                      target="_blank"
+                      href="https://projet-4-v1.web.app"
+                      class="btn btn-primary link"
+                      >Aller sur la premiere version du site →</a
+                    >
+                    <a
+                      target="_blank"
+                      href="https://projet-4-latest-version.web.app"
+                      class="btn btn-primary link"
+                      >Aller sur la version optimisé du site →</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -270,6 +272,30 @@
                     lancé manuellement quand je les utilisent ils ne sont donc
                     pas disponible.
                   </p>
+                  <div class="githublinks">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Naitchi/Projet-5-OpenClassroom"
+                      class="btn btn-primary linkGithub"
+                      >Aller sur le repositoire
+                      <img
+                        class="logo linklogo"
+                        src="./img/GitHub_logo.png"
+                        alt="Logo Github"
+                      />Github du Projet 5 →</a
+                    >
+                    <a
+                      target="_blank"
+                      href="https://github.com/Naitchi/Projet-6-OpenClassroom"
+                      class="btn btn-primary linkGithub"
+                      >Aller sur le repositoire
+                      <img
+                        class="logo linklogo"
+                        src="./img/GitHub_logo.png"
+                        alt="Logo Github"
+                      />Github du Projet 6 →</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -367,7 +393,7 @@
           <div class="slide">
             <div class="flex">
               <div class="card lastone ">
-                <h4>
+                <h4 class="description">
                   Ce n'est évidemment pas tout, vous pouvez trouver d'autres
                   montages photo sur mon instagram, ainsi que des montages
                   vidéos sur mon youtube. Pour tout ce qui est code source des
@@ -406,8 +432,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <h3>Recommandation</h3>-->
         </div>
       </div>
       <div class="section">
@@ -422,7 +446,11 @@
               <h5 class="entreprise">
                 Community manager chez Misfit, Streamer
               </h5>
-              <p class="email">dyl.bouvier<span class="green">@</span>gmail.com</p>
+              <p class="email">
+                dyl.bouvier<span class="green">@</span>gmail<span class="green"
+                  >.</span
+                >com
+              </p>
             </div>
             <div class="r-me">
               <img
@@ -432,20 +460,45 @@
               />
               <h4 class="nom">Joffrey Hernandez</h4>
               <h5 class="entreprise">Mentor chez OpenClassroom</h5>
-              <p class="email">Joffrey.hernandez<span class="green">@</span>gmail.com</p>
+              <p class="email">
+                Joffrey.hernandez<span class="green">@</span>gmail<span
+                  class="green"
+                  >.</span
+                >com
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div class="section">
-        <div id="contact">
-          <h3>contact</h3>
+        <div id="contact-me">
+          <h3 class="h-contact">Contact<span class="green">.</span></h3>
+          <form class="form">
+            <label class="label" for="name">Nom :</label>
+            <input class="input" id="name" type="text" />
+            <label class="label" for="entreprise">Entreprise :</label>
+            <input class="input" id="entreprise" type="text" />
+            <label class="label" for="message">Message :</label>
+            <textarea class="textarea" id="message"></textarea>
+            <input
+              type="submit"
+              value="Envoyer"
+              class="btn btn-secondary send"
+            />
+          </form>
+          <p class="l-network">
+            <span class="green">
+              Vous pouvez toujours me contacter sur mes</span
+            >
+            <a href="#Qui_Suis-je">réseaux</a> <span class="green">.</span>
+          </p>
         </div>
       </div>
     </div>
 
     <!--JS-->
     <script src="./js/script.js"></script>
+    <script src="./js/scrolloverflow.min.js"></script>
     <script src="./js/fullpage.js"></script>
     <script>
       new fullpage("#fullpage", {
@@ -469,6 +522,7 @@
           "Qui_Suis-je",
           "Mes_Services",
           "Portefolio",
+          "Recommandation",
           "Contact",
         ],
       });
