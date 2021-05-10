@@ -1651,7 +1651,8 @@
           typeof e.deltaX !== "undefined";
         var isScrollingVertically =
           Math.abs(e.wheelDeltaX) < Math.abs(e.wheelDelta) ||
-          Math.abs(e.deltaX) < Math.abs(e.deltaY) || !horizontalDetection;
+          Math.abs(e.deltaX) < Math.abs(e.deltaY) ||
+          !horizontalDetection;
 
         //Limiting the array to 150 (lets not waste memory!)
         if (scrollings.length > 149) {
