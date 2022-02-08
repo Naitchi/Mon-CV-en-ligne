@@ -6,6 +6,13 @@
   color: white;
 }
 
+.rectangle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 #canvas {
   position: absolute;
   top: 0;
@@ -36,7 +43,13 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: rgba(58, 58, 58, 0.98);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 58, 58, 0) 0%,
+    rgba(58, 58, 58, 1) 7%,
+    rgba(58, 58, 58, 1) 93%,
+    rgba(58, 58, 58, 0) 100%
+  );
   width: 70%;
   height: 20%;
   border-radius: 2%;
@@ -73,7 +86,7 @@ h2 > span {
 
 .h-services {
   text-transform: uppercase;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 300;
 }
 
@@ -102,6 +115,7 @@ h2 > span {
 
 .services-content {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -212,20 +226,39 @@ a > img {
 
 .w-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   width: 90%;
   justify-content: space-around;
 }
 
 .w-p {
-  width: 50%;
+  width: 90%;
   font-size: 1.5rem;
   text-align: justify;
 }
 
 .m-li {
   font-size: 2rem;
+}
+
+.p-recom {
+  font-size: 1.4rem;
+  width: 80%;
+  text-align: center;
+  margin-top: 35px;
+}
+
+#quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgb(2, 0, 36);
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .network {
@@ -248,9 +281,10 @@ a > img {
 }
 
 .w-b {
-  width: 2px;
-  height: 420px;
+  width: 420px;
+  height: 2px;
   background: rgba(0, 176, 82);
+  align-self: center;
 
   margin-top: 50px;
 }
@@ -268,8 +302,13 @@ a > img {
 }
 
 .box-fleche:hover {
-  background: rgba(105, 105, 105, 0.9);
+  background: rgba(58, 58, 58, 0.98);
   border-radius: 50%;
+}
+
+.network {
+  display: flex;
+  flex-direction: row;
 }
 
 .box-fleche {
@@ -287,6 +326,53 @@ a {
 }
 a:hover {
   color: white !important;
+}
+
+.réseaux {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.réseaux > li > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.7rem;
+  padding: 5px;
+}
+
+.réseaux > li > a:hover {
+  background-color: #00ae51;
+  border-radius: 5px;
+}
+
+.btn-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 570px;
+}
+
+.fa-phone,
+.fa-envelope {
+  margin-right: 10px;
+}
+
+.card-body > a {
+  border: solid #00ae51 3px;
+}
+
+.card-body > a:hover {
+  background: white !important;
+  color: #00ae51 !important ;
+  font-weight: bold;
 }
 
 .fp-controlArrow.fp-next {
@@ -463,6 +549,7 @@ a:hover {
 .send {
   background-color: #00ae51 !important;
   border-color: #00ae51 !important;
+  font-size: 1.4rem !important;
 }
 .send:active {
   background-color: #ffffff !important;
@@ -473,6 +560,10 @@ a:hover {
 .send:hover {
   background-color: #ffffff !important;
   border-color: #00ae51 !important;
+  color: #00ae51 !important;
+}
+
+.send:hover > i {
   color: #00ae51 !important;
 }
 
@@ -656,7 +747,7 @@ a:hover {
 
 @media screen and (max-width: 1440px) {
   .h-services {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .serv-p {
     font-size: 1.3rem;
