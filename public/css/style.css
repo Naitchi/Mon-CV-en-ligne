@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: #fff;
 }
 .rectangle {
   display: flex;
@@ -53,13 +53,13 @@
 h1,
 h2 {
   font-family: "Bebas Neue", cursive;
-  color: white;
+  color: #fff;
   letter-spacing: 3px;
 }
 h1,
 h2 > span {
   font-family: "Bebas Neue", cursive;
-  color: white;
+  color: #fff;
   letter-spacing: 2px;
 }
 .pp {
@@ -136,7 +136,7 @@ h2 > span {
   -moz-border-radius: 36;
   border-radius: 36px;
   font-family: "Roboto";
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -249,18 +249,17 @@ a > img {
   height: 2px;
   background: rgba(0, 176, 82);
   align-self: center;
-
   margin-top: 50px;
 }
 .fleche {
   font-size: 7rem;
   margin-left: 8px;
   transform: rotate(90deg);
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 .fleche:hover {
-  color: white;
+  color: #fff;
 }
 .box-fleche:hover {
   background: rgba(58, 58, 58, 0.98);
@@ -324,29 +323,29 @@ a:hover {
 }
 .card-body > a:hover {
   background: white !important;
-  color: #00ae51 !important ;
-  font-weight: bold;
+  color: #00ae51 !important;
+  font-weight: 700;
 }
 .githublink > a:hover {
   background: white !important;
-  color: #00ae51 !important ;
-  font-weight: bold;
+  color: #00ae51 !important;
+  font-weight: 700;
 }
 .githublink > a {
   border: solid #00ae51 3px;
 }
 .githublink > a:hover {
   background: white !important;
-  color: #00ae51 !important ;
-  font-weight: bold;
+  color: #00ae51 !important;
+  font-weight: 700;
 }
 .githublink > a {
   border: solid #00ae51 3px;
 }
 .githublinks > a:hover {
   background: white !important;
-  color: #212529 !important ;
-  font-weight: bold;
+  color: #212529 !important;
+  font-weight: 700;
 }
 .githublinks > a {
   border: solid #212529 3px;
@@ -355,7 +354,7 @@ a:hover {
   border-color: transparent transparent transparent #ffffff !important;
 }
 .fp-controlArrow.fp-prev:hover {
-  border-color: transparent #ffffff transparent transparent !important;
+  border-color: transparent #fff transparent transparent !important;
 }
 .fp-controlArrow.fp-next {
   right: 8% !important;
@@ -488,7 +487,7 @@ a:hover {
 }
 .textarea {
   width: 300px;
-  color: black;
+  color: #000;
   font-size: 1.5rem;
   line-height: 25px;
 }
@@ -537,10 +536,10 @@ a:hover {
   background-color: unset !important;
 }
 .linklogo {
-  background: white;
+  background: #fff;
   border-radius: 30%;
-  border: 0px;
-  margin-right: 0px;
+  border: 0;
+  margin-right: 0;
 }
 .githublinks {
   display: flex;
@@ -561,7 +560,6 @@ a:hover {
   width: 90%;
   text-align: center;
 }
-
 @media screen and (min-width: 2500px) {
   .flex {
     height: 80%;
@@ -704,7 +702,6 @@ a:hover {
     font-size: 3rem;
   }
 }
-
 @media screen and (max-width: 1440px) {
   .h-services {
     font-size: 5rem;
@@ -769,7 +766,6 @@ a:hover {
     font-size: 6rem;
   }
 }
-
 @media screen and (max-width: 768px) {
   .réseaux {
     margin-top: 0;
@@ -872,7 +868,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 0px;
+    margin-right: 0;
     width: 100%;
     font-size: 0.9rem !important;
   }
@@ -883,7 +879,7 @@ a:hover {
     font-size: 1rem;
   }
   .network {
-    margin-left: 0px;
+    margin-left: 0;
   }
   .description {
     text-align: center;
@@ -904,7 +900,7 @@ a:hover {
     height: 280px;
   }
   .email {
-    margin-top: 0px;
+    margin-top: 0;
     display: flex;
     flex-wrap: wrap;
     width: 171px;
@@ -934,13 +930,11 @@ a:hover {
   .fp-controlArrow.fp-next {
     top: unset;
     bottom: 10%;
-
     right: 25% !important;
   }
   .fp-controlArrow.fp-prev {
     top: unset;
     bottom: 10%;
-
     left: 25% !important;
   }
   .fp-slides {

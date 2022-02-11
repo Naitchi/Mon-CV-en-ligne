@@ -13,14 +13,12 @@ html.fp-enabled,
   margin: 0;
   padding: 0;
   overflow: hidden;
-
-  /*Avoid flicker on slides transitions for mobile phones #336 */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .fp-section {
   position: relative;
-  -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
-  -moz-box-sizing: border-box; /* <=28 */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .fp-slide {
@@ -36,7 +34,7 @@ html.fp-enabled,
   height: 100%;
   overflow: hidden;
   position: relative;
-  -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 .fp-section.fp-table,
@@ -56,10 +54,10 @@ html.fp-enabled,
   position: relative;
 }
 .fp-controlArrow {
-  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
-  -moz-user-select: none; /* mozilla browsers */
-  -khtml-user-select: none; /* webkit (konqueror) browsers */
-  -ms-user-select: none; /* IE10+ */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
   position: absolute;
   z-index: 4;
   top: 50%;
@@ -161,7 +159,7 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a.active span {
   height: 12px;
   width: 12px;
-  margin: -6px 0 0 -6px;
+  margin: -6px 0 0-6px;
   border-radius: 100%;
 }
 #fp-nav ul li a span,
@@ -175,7 +173,7 @@ html.fp-enabled,
   background: #333;
   left: 50%;
   top: 50%;
-  margin: -2px 0 0 -2px;
+  margin: -2px 0 0-2px;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
@@ -185,9 +183,9 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a span {
   width: 10px;
   height: 10px;
-  margin: -5px 0px 0px -5px;
+  margin: -5px 0px 0px-5px;
 }
-#fp-nav ul li .fp-tooltip {
+#fp-nav ul li.fp-tooltip {
   position: absolute;
   top: -2px;
   color: #fff;
@@ -201,32 +199,29 @@ html.fp-enabled,
   width: 0;
   cursor: pointer;
 }
-#fp-nav ul li:hover .fp-tooltip,
+#fp-nav ul li:hover.fp-tooltip,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
   -webkit-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
   width: auto;
   opacity: 1;
 }
-#fp-nav ul li .fp-tooltip.fp-right {
+#fp-nav ul li.fp-tooltip.fp-right {
   right: 20px;
 }
-#fp-nav ul li .fp-tooltip.fp-left {
+#fp-nav ul li.fp-tooltip.fp-left {
   left: 20px;
 }
 .fp-auto-height.fp-section,
-.fp-auto-height .fp-slide,
-.fp-auto-height .fp-tableCell {
+.fp-auto-height.fp-slide,
+.fp-auto-height.fp-tableCell {
   height: auto !important;
 }
-
-.fp-responsive .fp-auto-height-responsive.fp-section,
-.fp-responsive .fp-auto-height-responsive .fp-slide,
-.fp-responsive .fp-auto-height-responsive .fp-tableCell {
+.fp-responsive.fp-auto-height-responsive.fp-section,
+.fp-responsive.fp-auto-height-responsive.fp-slide,
+.fp-responsive.fp-auto-height-responsive.fp-tableCell {
   height: auto !important;
 }
-
-/*Only display content to screen readers*/
 .fp-sr-only {
   position: absolute;
   width: 1px;

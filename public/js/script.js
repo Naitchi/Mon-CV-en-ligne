@@ -2,22 +2,16 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
 let particlesArray;
-
-//get mouse position
 let mouse = {
   x: null,
   y: null,
   radius: (canvas.height / 110) * (canvas.width / 110),
 };
-
 window.addEventListener("mousemove", function(event) {
   mouse.x = event.x;
   mouse.y = event.y;
 });
-
-//create particule
 class Particle {
   constructor(x, y, directionX, directionY, size, color) {
     this.x = x;
@@ -27,24 +21,19 @@ class Particle {
     this.size = size;
     this.color = color;
   }
-  //method to draw a individual particle
   draw() {
     ctx.beginPath();
-    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, !1);
     ctx.fillStyle = "#ffffff";
     ctx.fill();
   }
-  //check particle position, check mouse position, move the particule, draw the particle
   update() {
-    //check if particle is still winhtin canvas
     if (this.x > canvas.width || this.x < 0) {
       this.directionX = -this.directionX;
     }
     if (this.y > canvas.height || this.y < 0) {
       this.directionY = -this.directionY;
     }
-
-    //check collision detection - mouse position / particle position
     let dx = mouse.x - this.x;
     let dy = mouse.y - this.y;
     let distance = Math.sqrt(dx * dx + dy * dy);
@@ -66,14 +55,11 @@ class Particle {
         this.directionY *= -1;
       }
     }
-    //move particle
     this.x += this.directionX;
     this.y += this.directionY;
-    //draw particle
     this.draw();
   }
 }
-//create particle array
 function init() {
   particlesArray = [];
   let numberOfParticles = (canvas.height * canvas.width) / 8000;
@@ -84,15 +70,12 @@ function init() {
     let directionX = Math.random() * 2;
     let directionY = Math.random() * 2;
     let color = "#ffffff";
-
     particlesArray.push(
       new Particle(x, y, directionX, directionY, size, color)
     );
   }
   console.log(particlesArray);
 }
-
-//check if particles are close enough to draw line between them
 function connect() {
   let opacityValue = 1;
   for (let a = 0; a < particlesArray.length; a++) {
@@ -113,31 +96,23 @@ function connect() {
     }
   }
 }
-
-//animation loop
 function animate() {
   requestAnimationFrame(animate);
   ctx.clearRect(0, 0, innerWidth, innerHeight);
-
   for (let i = 0; i < particlesArray.length; i++) {
     particlesArray[i].update();
   }
   connect();
 }
-
-//resize event
 window.addEventListener("resize", function() {
   canvas.width = innerWidth;
   canvas.height = innerHeight;
   mouse.raduis = (canvas.height / 110) * (canvas.height / 110);
   init();
 });
-
-//mouse out event
 window.addEventListener("mouseout", function() {
   mouse.x = undefined;
   mouse.y = undefined;
 });
-
 init();
 animate();
