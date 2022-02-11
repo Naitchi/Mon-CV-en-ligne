@@ -709,9 +709,7 @@ a:hover {
   #quality > img {
     width: 90%;
   }
-  #fp-nav ul li .fp-tooltip.fp-right {
-    display: none !important;
-  }
+
   .rectangle {
     flex-wrap: wrap;
   }
@@ -772,6 +770,11 @@ a:hover {
     padding-left: 0;
     width: 100%;
   }
+
+  #fp-nav ul li .fp-tooltip.fp-right {
+    display: none;
+  }
+
   .réseaux > li,
   .réseaux > li > a {
     font-size: 1rem;
@@ -789,9 +792,6 @@ a:hover {
   h1,
   h2 {
     text-align: center;
-  }
-  #fp-nav ul li .fp-tooltip.fp-right {
-    right: 5px;
   }
   .h-whoami {
     font-size: 2.5rem;
