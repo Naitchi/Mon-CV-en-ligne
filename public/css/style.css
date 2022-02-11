@@ -11,6 +11,13 @@
   justify-content: space-around;
   align-items: center;
 }
+#fp-nav ul li .fp-tooltip.fp-right {
+  background: #565656eb;
+  padding: 5px;
+  border-radius: 16px;
+  top: -12px;
+  font-size: 1rem;
+}
 #canvas {
   position: absolute;
   top: 0;
