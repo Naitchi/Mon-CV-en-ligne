@@ -260,7 +260,7 @@ a > img {
 }
 .fleche {
   font-size: 7rem;
-  margin-left: 8px;
+  margin-left: 23px;
   transform: rotate(90deg);
   color: #fff;
   text-decoration: none;
@@ -559,8 +559,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 .p-c {
   font-size: 1.5rem;
