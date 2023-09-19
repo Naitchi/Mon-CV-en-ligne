@@ -1,614 +1,486 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="./img/favicon.ico" />
-    <title>CV Benjamin Clairotte</title>
-    <!--FONT-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <!--JS-->
-    <script
-      src="https://kit.fontawesome.com/3365aec9c9.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--CSS-->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/fullpage.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
-    <!-- Base -->
-    <title>
-      CV Benjamin Clairotte
-    </title>
-    <meta
-      name="description"
-      content="Tout savoir sur Benjamin Clairotte, qu'elles sont ses compétences et ses projets déjà réalisés !"
-    />
-    <!-- Twitter summary card with large image must be at least 280x150px -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@BClairotte" />
-    <meta name="twitter:creator" content="@BClairotte" />
-    <meta
-      name="twitter:title"
-      content="CV Benjamin Clairotte, tout savoir sur ses compétences !"
-    />
-    <meta
-      name="twitter:description"
-      content="Tout savoir sur Benjamin Clairotte, qu'elles sont ses compétences et ses projets déjà réalisés !"
-    />
-    <meta
-      name="twitter:image"
-      content="https://benjaminclairotte.fr/img/PPNaitchi.png"
-    />
 
-    <!-- Open Graph meta (Facebook, Linkedin) -->
-    <meta property="og:title" content="CV Benjamin Clairotte" />
-    <meta property="og:url" content="http://benjaminclairotte.fr/" />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:description"
-      content="Tout savoir sur Benjamin Clairotte, qu'elles sont ses compétences et ses projets déjà réalisés !"
-    />
-    <meta property="author" content="Benjamin Clairotte" />
-  </head>
-  <body>
-    <div id="fullpage">
-      <div class="section">
-        <div class="presentation">
-          <img class="pp" src="./img/PPNaitchitest.png" />
-          <div class="presentation-content">
-            <h1>Benjamin Clairotte</h1>
-            <h2>
-              Le développeur dont <span class="underline">VOUS</span> avez
-              besoin !
-            </h2>
-          </div>
-          <div class="box-fleche">
-            <a class="fleche" href="#Qui_Suis-je">→</a>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="icon" href="./img/favicon.ico" />
+  <title>CV Benjamin Clairotte</title>
+  <!--FONT-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <!--JS-->
+  <script src="https://kit.fontawesome.com/3365aec9c9.js" crossorigin="anonymous"></script>
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/fullpage.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <!-- Base -->
+  <title>
+    CV Benjamin Clairotte
+  </title>
+  <meta name="description"
+    content="Tout savoir sur Benjamin Clairotte, qu'elles sont ses compétences et ses projets déjà réalisés !" />
+  <!-- Twitter summary card with large image must be at least 280x150px -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@BClairotte" />
+  <meta name="twitter:creator" content="@BClairotte" />
+  <meta name="twitter:title" content="CV Benjamin Clairotte, tout savoir sur ses compétences !" />
+  <meta name="twitter:description"
+    content="Tout savoir sur Benjamin Clairotte, qu'elles sont ses compétences et ses projets déjà réalisés !" />
+  <meta name="twitter:image" content="https://benjaminclairotte.fr/img/PPNaitchi.png" />
+
+  <!-- Open Graph meta (Facebook, Linkedin) -->
+  <meta property="og:title" content="CV Benjamin Clairotte" />
+  <meta property="og:url" content="http://benjaminclairotte.fr/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description"
+    content="Tout savoir sur Benjamin Clairotte, qu'elles sont ses compétences et ses projets déjà réalisés !" />
+  <meta property="author" content="Benjamin Clairotte" />
+</head>
+
+<body>
+  <div id="fullpage">
+    <div class="section">
+      <div class="presentation">
+        <img class="pp" src="./img/PPNaitchitest.png" />
+        <div class="presentation-content">
+          <h1>Benjamin Clairotte</h1>
+          <h2>
+            Le développeur dont <span class="underline">VOUS</span> avez
+            besoin !
+          </h2>
         </div>
-        <canvas id="canvas"></canvas>
-      </div>
-      <div class="section">
-        <div id="whoiam">
-          <h3 class="h-whoami ">Qui suis-je <span class="green">?</span></h3>
-          <div class="w-section">
-            <p class="w-p">
-              Je m'appelle Benjamin Clairotte. Je suis un jeune homme de 21 ans
-              curieux de tout. Je dispose d’un bac+2 en développement web acquis
-              avec la formation OpenClassrooms. Cette formation diplômante et
-              reconnue par l’Etat m’a permis de travailler sur des projets
-              concrets. Lors de ma formation, j’ai pu apprendre à coder en HTML,
-              PUG, CSS, SASS, JS, node.JS, API REST, bootstrap, mySQL, MongoDB
-              en plus d’avoir pu utiliser git et github. J’ai appris de nombreux
-              langages en plus de notions importantes comme l’optimisation de
-              SEO et de l’accessibilité d’un site web. Dans le dernier projet de
-              ma formation, j’ai appris à utiliser Vue.js et VueX. <br />
-              Je suis actuellement en recherche d’une alternance afin de
-              poursuivre mes études pour atteindre un bac+4. Je suis disposé à
-              me relocaliser et motivé. Je suis disponible pour les deux types
-              de contrats, apprentissage ou professionnalisation, sera selon
-              votre choix. Lors de ma formation, je me suis aussi entouré de
-              personnes extrêmement douées qui ont participé à mon apprentissage
-              sur les logiciels Photoshop et Sony Vegas 18, logiciels que je
-              maîtrise bien maintenant.
-            </p>
-            <div class="w-b green"></div>
-            <ul class="réseaux">
-              <li class="m-li">
-                Réseaux Sociaux <span class="green"> :</span>
-              </li>
-              <li>
-                <a target="_blank" href="https://github.com/Naitchi">
-                  <img
-                    class="logo"
-                    src="./img/GitHub_logo.png"
-                    alt="Logo Github"
-                  />
-                  Github
-                </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/benjamin-clairotte/"
-                  ><img
-                    class="logo linkedin"
-                    src="./img/Logo_Linkedin.jpeg"
-                    alt="Logo Linkedin"
-                  />Linkedin</a
-                >
-              </li>
-            </ul>
-          </div>
+        <div class="box-fleche">
+          <a class="fleche" href="#Qui_Suis-je">→</a>
         </div>
       </div>
-      <div class="section">
-        <div id="services">
-          <h3 class="h-services">
-            mes compétences<span class="h-span green">.</span>
-          </h3>
-          <div class="services-content">
-            <div class="rectangle">
-              <div class="group">
-                <i class="fab fa-vuejs fa-6x"></i>
-                <p class="serv-p">Vue<span class="green">.</span>Js</p>
-              </div>
-              <div class="separation"></div>
-              <div class="group">
-                <i class="fab fa-html5 fa-6x"></i>
-                <p class="serv-p">html5<span class="green">.</span></p>
-              </div>
-              <div class="separation"></div>
-              <div class="group">
-                <i class="fab fa-js fa-6x"></i>
-                <p class="serv-p">Js<span class="green">.</span></p>
-              </div>
-              <div class="separation"></div>
-              <div class="group">
-                <i class="fab fa-css3-alt fa-6x"></i>
-                <p class="serv-p">Css3<span class="green">.</span></p>
-              </div>
-              <div class="separation"></div>
-              <div class="group">
-                <i class="fab fa-sass fa-6x"></i>
-                <p class="serv-p">Sass<span class="green">.</span></p>
-              </div>
-            </div>
-            <div class="rectangle">
-              <div class="group">
-                <i class="fab fa-node fa-6x"></i>
-                <p class="serv-p">Node<span class="green">.</span>Js</p>
-              </div>
-              <div class="separation"></div>
-              <div class="group">
-                <i class="fab fa-npm fa-6x"></i>
-                <p class="serv-p">npm<span class="green">.</span></p>
-              </div>
-              <div class="separation"></div>
-              <div class="group">
-                <i class="fab fa-git fa-6x"></i>
-                <p class="serv-p">git<span class="green">.</span></p>
-              </div>
-              <div class="separation"></div>
-              <div class="group">
-                <i class="fab fa-github fa-6x"></i>
-                <p class="serv-p">Github<span class="green">.</span></p>
-              </div>
-              <div class="separation"></div>
-              <div class="group">
-                <i class="fas fa-dog fa-6x"></i>
-                <p class="serv-p">Pug<span class="green">.</span></p>
-              </div>
-            </div>
-            <div class="rectangle">
-              <div class="group">
-                <i class="fas fa-mobile fa-6x"></i>
-                <p class="serv-p">Responsive<span class="green">.</span></p>
-              </div>
-              <div class="separation"></div>
-              <div class="group">
-                <i class="fas fa-database fa-6x"></i>
-                <p class="serv-p">MongoDB<span class="green">.</span></p>
-              </div>
-              <div class="separation"></div>
-              <div class="group">
-                <i class="fas fa-database fa-6x"></i>
-                <p class="serv-p">MySQL <span class="green">.</span></p>
-              </div>
-              <div class="separation"></div>
-              <div class="group">
-                <i class="fas fa-dungeon fa-6x"></i>
-                <p class="serv-p">API <span class="green">.</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="section-contact">
-            <a href="#Contact"><Btn class="contact">Contactez-moi</Btn></a>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div id="quality">
-          <h3 class="h-services">
-            mes qualités<span class="h-span green">.</span>
-          </h3>
-          <img src="./img/nuage-de-mots.png" />
-        </div>
-      </div>
-      <div class="section">
-        <div id="portfolio">
-          <h3 class="h-folio">Portfolio<span class="green">.</span></h3>
-          <div class="slide">
-            <div class="flex">
-              <div class="card folio">
-                <img
-                  src="./img/card_P2.PNG"
-                  class="card-img-top"
-                  alt="site créé pour le projet 2 d'OpenClassrooms"
-                />
-                <div class="card-body content-folio">
-                  <h5 class="card-title">Cv en ligne</h5>
-                  <p class="card-text black">
-                    Projet numéro 2 d'OpenClassrooms consistant à créer un petit
-                    site à partir d'une maquette donnée. Coder en HTML et CSS et
-                    faire pour en sorte qu'il soit accessible depuis toutes les
-                    plateformes.
-                  </p>
-                  <a
-                    target="_blank"
-                    href="https://naitchi.github.io"
-                    class="btn btn-primary link"
-                    >Aller sur le site →</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="flex">
-              <div class="card folio">
-                <img
-                  src="./img/card_P3.PNG"
-                  class="card-img-top"
-                  alt="site créé pour le projet 3 d'OpenClassrooms"
-                />
-                <div class="card-body content-folio">
-                  <h5 class="card-title">Ohmyfood</h5>
-                  <p class="card-text black">
-                    Projet numéro 3 d'OpenClassrooms consistant à créer un site
-                    à partir d'une maquette donnée. Coder en HTML et en SASS
-                    avec des animations et à faire en sorte qu'il soit
-                    accessible depuis toutes les plateformes tout comme le
-                    précédent projet.
-                  </p>
-                  <a
-                    target="_blank"
-                    href="https://projet-3-oc-4c5e8.web.app/"
-                    class="btn btn-primary link"
-                    >Aller sur le site →</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="flex">
-              <div class="card folio">
-                <img
-                  src="./img/card_P4.PNG"
-                  class="card-img-top"
-                  alt="site créé pour le projet 4 d'OpenClassrooms"
-                />
-                <div class="card-body content-folio">
-                  <h5 class="card-title">La Chouette Agence</h5>
-                  <p class="card-text black">
-                    Projet numéro 4 d'OpenClassrooms consistant à modifier un
-                    site déjà existant pour le rendre plus accessible à tout le
-                    monde mais aussi pour faciliter son accessibilité via un
-                    moteur de recherche.
-                  </p>
-                  <div class="githublink">
-                    <a
-                      target="_blank"
-                      href="https://projet-4-v1.web.app"
-                      class="btn btn-primary link"
-                      >Aller sur la première version du site →</a
-                    >
-                    <a
-                      target="_blank"
-                      href="https://projet-4-latest-version.web.app"
-                      class="btn btn-primary link"
-                      >Aller sur la version optimisée du site →</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="flex">
-              <div class="card folio">
-                <img
-                  src="./img/Orinoco.JPG"
-                  class="card-img-top"
-                  alt="site créé pour le projet 5 d'OpenClassrooms"
-                />
-                <div class="card-body content-folio">
-                  <h5 class="card-title">
-                    Orinoco
-                  </h5>
-                  <p class="card-text black">
-                    Le projet numéro 5 d'OpenClassrooms consistant à utiliser
-                    une api côté frontend pour une entreprise d'e-commerce.
-                  </p>
-                  <a
-                    target="_blank"
-                    href="https://github.com/Naitchi/Projet-5-OpenClassrooms"
-                    class="btn btn-primary linkGithub"
-                    >Aller sur le repository
-                    <img
-                      class="logo linklogo"
-                      src="./img/GitHub_logo.png"
-                      alt="Logo Github"
-                    />Github du projet 5 →</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="flex">
-              <div class="card folio">
-                <img
-                  src="./img/Piquante.JPG"
-                  class="card-img-top"
-                  alt="site créé pour le projet 5 & 6 d'OpenClassrooms"
-                />
-                <div class="card-body content-folio">
-                  <h5 class="card-title">
-                    Piquante
-                  </h5>
-                  <p class="card-text black">
-                    Le projet numéro 6 d'OpenClassrooms consistant à créer une
-                    API REST pour gérer un système de comptes utilisateurs et de
-                    produits que les utilisateurs peuvent noter ou en ajouter si
-                    inexistant. Codé en node.js et avec MongoDB.
-                  </p>
-                  <a
-                    target="_blank"
-                    href="https://github.com/Naitchi/Projet-6-OpenClassrooms"
-                    class="btn btn-primary linkGithub"
-                    >Aller sur le repository
-                    <img
-                      class="logo linklogo"
-                      src="./img/GitHub_logo.png"
-                      alt="Logo Github"
-                    />Github du projet 6 →</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="flex">
-              <div class="card folio">
-                <img
-                  src="./img/P7.JPG"
-                  class="card-img-top"
-                  alt="site créé pour le projet 7 d'OpenClassrooms"
-                />
-                <div class="card-body content-folio">
-                  <h5 class="card-title">
-                    Groupamania
-                  </h5>
-                  <p class="card-text black">
-                    Le projet numéro 7 d'OpenClassrooms consiste à construire un
-                    réseau social avec VueJS et VueX mais également SQL, pour
-                    avoir une base de données plus gérable.
-                  </p>
-                  <div class="githublinks">
-                    <a
-                      target="_blank"
-                      href="https://github.com/Naitchi/frontend"
-                      class="btn btn-primary linkGithub"
-                    >
-                      Aller sur le repository
-                      <img
-                        class="logo linklogo"
-                        src="./img/GitHub_logo.png"
-                        alt="Logo Github"
-                      />
-                      Github du frontend →
-                    </a>
-                    <a
-                      target="_blank"
-                      href="https://github.com/Naitchi/Projet-7-backend-OpenClassroom"
-                      class="btn btn-primary linkGithub"
-                    >
-                      Aller sur le repository
-                      <img
-                        class="logo linklogo"
-                        src="./img/GitHub_logo.png"
-                        alt="Logo Github"
-                      />
-                      Github du backend →
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="flex">
-              <div class="card folio">
-                <img
-                  src="./img/AmongLegends.JPG"
-                  class="card-img-top"
-                  alt="Site internet AmongLegends.gg"
-                />
-                <div class="card-body content-folio">
-                  <h5 class="card-title">
-                    AmongLegends
-                  </h5>
-                  <p class="card-text black">
-                    Site créé pour Solary qui permet aux gens de jouer à un
-                    autre mode du jeu League of Legends, où il faut trouver les
-                    intrus à la manière d'un "Among us". J'ai recréé le frontend
-                    du site en suivant la nouvelle maquette avec du PUG et du
-                    SASS.
-                  </p>
-                  <a
-                    target="_blank"
-                    href="http://amonglegends.gg/"
-                    class="btn btn-primary link"
-                    >Aller sur le site →</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="flex">
-              <div class="card lastone ">
-                <h4 class="description">
-                  Et bien d'autres en préparation et dans le futur... Vous
-                  pouvez retrouver tous les codes source des sites présentés,
-                  ils sont tous disponibles sur mon Github.
-                </h4>
-                <a
-                  target="_blank"
-                  href="https://github.com/Naitchi"
-                  class="network"
-                >
-                  <img
-                    class="logo"
-                    src="./img/GitHub_logo.png"
-                    alt="Logo Github"
-                  />
-                  Github
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div id="recommandations">
-          <h3 class="h-recom">Recommandations<span class="green">.</span></h3>
-          <div class="r-content">
-            <div class="r-me">
-              <img class="pp" src="./img/ppPwcca.PNG" alt="Photo de Pwcca" />
-              <h4 class="nom">
-                Dylan Bouvier <span class="green">alias</span> Pwcca
-              </h4>
-              <h5 class="entreprise">
-                Community manager chez Solary, Streamer
-              </h5>
-              <p class="email">
-                dyl.bouvier<span class="green">@</span>gmail<span class="green"
-                  >.</span
-                >com
-              </p>
-            </div>
-            <div class="r-me">
-              <img
-                class="pp"
-                src="./img/JoffreyPP.webp"
-                alt="Photo de Joffrey"
-              />
-              <h4 class="nom">Joffrey Hernandez</h4>
-              <h5 class="entreprise">Mentor chez OpenClassrooms</h5>
-              <p class="email">
-                Joffrey.hernandez<span class="green">@</span>gmail<span
-                  class="green"
-                  >.</span
-                >com
-              </p>
-            </div>
-          </div>
-          <p class="p-recom">
-            Ayant déjà vu de quoi j'étais capable ils me recommandent et peuvent
-            se rendre disponibles pour répondre à vos questions me concernant
-            avant un éventuel recrutement.
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="section">
+      <div id="whoiam">
+        <h3 class="h-whoami ">Qui suis-je <span class="green">?</span></h3>
+        <div class="w-section">
+          <p class="w-p">
+            Je m'appelle Benjamin Clairotte. Je suis un jeune homme de 21 ans
+            curieux de tout. Je dispose d’un bac+2 en développement web acquis
+            avec la formation OpenClassrooms. Cette formation diplômante et
+            reconnue par l’Etat m’a permis de travailler sur des projets
+            concrets. Lors de ma formation, j’ai pu apprendre à coder en HTML,
+            PUG, CSS, SASS, JS, node.JS, API REST, bootstrap, mySQL, MongoDB
+            en plus d’avoir pu utiliser git et github. J’ai appris de nombreux
+            langages en plus de notions importantes comme l’optimisation de
+            SEO et de l’accessibilité d’un site web. Dans le dernier projet de
+            ma formation, j’ai appris à utiliser Vue.js et VueX. <br />
+            Je suis actuellement en recherche d’une alternance afin de
+            poursuivre mes études pour atteindre un bac+4. Je suis disposé à
+            me relocaliser et motivé. Je suis disponible pour les deux types
+            de contrats, apprentissage ou professionnalisation, sera selon
+            votre choix. Lors de ma formation, je me suis aussi entouré de
+            personnes extrêmement douées qui ont participé à mon apprentissage
+            sur les logiciels Photoshop et Sony Vegas 18, logiciels que je
+            maîtrise bien maintenant.
           </p>
-        </div>
-      </div>
-      <div class="section">
-        <div id="contact-me">
-          <h3 class="h-contact">Contact<span class="green">.</span></h3>
-          <p class="p-c">
-            Pour toute proposition de travail ou d'alternance je vous invite à
-            me contacter via mon email:
-            <span class="green"> benjaminclairottepro@gmail.com</span>
-            ci-dessous, ou au <span class="green">06.51.69.95.36</span>.
-          </p>
-          <div class="btn-contact">
-            <a
-              class="btn btn-secondary send"
-              href="mailto:benjaminclairottepro@gmail.com"
-            >
-              <i class="fas fa-envelope"></i>Contacter via email
-            </a>
-            <a class="btn btn-secondary send" href="tel:0651699536"
-              ><i class="fas fa-phone fa-rotate-90"></i>Contacter via téléphone
-            </a>
-          </div>
-          <p class="l-network">
-            <span class="green">
-              Vous pouvez toujours me contacter sur mes</span
-            >
-            <a href="#Qui_Suis-je">réseaux</a> <span class="green">.</span>
-          </p>
+          <div class="w-b green"></div>
+          <ul class="réseaux">
+            <li class="m-li">
+              Réseaux Sociaux <span class="green"> :</span>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/Naitchi">
+                <img class="logo" src="./img/GitHub_logo.png" alt="Logo Github" />
+                Github
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/benjamin-clairotte/"><img class="logo linkedin"
+                  src="./img/Logo_Linkedin.jpeg" alt="Logo Linkedin" />Linkedin</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+    <div class="section">
+      <div id="services">
+        <h3 class="h-services">
+          mes compétences<span class="h-span green">.</span>
+        </h3>
+        <div class="services-content">
+          <div class="rectangle">
+            <div class="group">
+              <i class="fab fa-vuejs fa-6x"></i>
+              <p class="serv-p">Vue<span class="green">.</span>Js</p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fab fa-html5 fa-6x"></i>
+              <p class="serv-p">html5<span class="green">.</span></p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fab fa-js fa-6x"></i>
+              <p class="serv-p">Js<span class="green">.</span></p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fab fa-css3-alt fa-6x"></i>
+              <p class="serv-p">Css3<span class="green">.</span></p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fab fa-sass fa-6x"></i>
+              <p class="serv-p">Sass<span class="green">.</span></p>
+            </div>
+          </div>
+          <div class="rectangle">
+            <div class="group">
+              <i class="fab fa-node fa-6x"></i>
+              <p class="serv-p">Node<span class="green">.</span>Js</p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fab fa-npm fa-6x"></i>
+              <p class="serv-p">npm<span class="green">.</span></p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fab fa-git fa-6x"></i>
+              <p class="serv-p">git<span class="green">.</span></p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fab fa-github fa-6x"></i>
+              <p class="serv-p">Github<span class="green">.</span></p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fas fa-dog fa-6x"></i>
+              <p class="serv-p">Pug<span class="green">.</span></p>
+            </div>
+          </div>
+          <div class="rectangle">
+            <div class="group">
+              <i class="fas fa-mobile fa-6x"></i>
+              <p class="serv-p">Responsive<span class="green">.</span></p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fas fa-database fa-6x"></i>
+              <p class="serv-p">MongoDB<span class="green">.</span></p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fas fa-database fa-6x"></i>
+              <p class="serv-p">MySQL <span class="green">.</span></p>
+            </div>
+            <div class="separation"></div>
+            <div class="group">
+              <i class="fas fa-dungeon fa-6x"></i>
+              <p class="serv-p">API <span class="green">.</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="section-contact">
+          <a href="#Contact">
+            <Btn class="contact">Contactez-moi</Btn>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div id="quality">
+        <h3 class="h-services">
+          mes qualités<span class="h-span green">.</span>
+        </h3>
+        <img src="./img/nuage-de-mots.png" />
+      </div>
+    </div>
+    <div class="section">
+      <div id="portfolio">
+        <h3 class="h-folio">Portfolio<span class="green">.</span></h3>
+        <div class="slide">
+          <div class="flex">
+            <div class="card folio">
+              <img src="./img/card_P2.PNG" class="card-img-top" alt="site créé pour le projet 2 d'OpenClassrooms" />
+              <div class="card-body content-folio">
+                <h5 class="card-title">Cv en ligne</h5>
+                <p class="card-text black">
+                  Projet numéro 2 d'OpenClassrooms consistant à créer un petit
+                  site à partir d'une maquette donnée. Coder en HTML et CSS et
+                  faire pour en sorte qu'il soit accessible depuis toutes les
+                  plateformes.
+                </p>
+                <a target="_blank" href="https://naitchi.github.io" class="btn btn-primary link">Aller sur le site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="flex">
+            <div class="card folio">
+              <img src="./img/card_P3.PNG" class="card-img-top" alt="site créé pour le projet 3 d'OpenClassrooms" />
+              <div class="card-body content-folio">
+                <h5 class="card-title">Ohmyfood</h5>
+                <p class="card-text black">
+                  Projet numéro 3 d'OpenClassrooms consistant à créer un site
+                  à partir d'une maquette donnée. Coder en HTML et en SASS
+                  avec des animations et à faire en sorte qu'il soit
+                  accessible depuis toutes les plateformes tout comme le
+                  précédent projet.
+                </p>
+                <a target="_blank" href="https://projet-3-oc-4c5e8.web.app/" class="btn btn-primary link">Aller sur le
+                  site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="flex">
+            <div class="card folio">
+              <img src="./img/card_P4.PNG" class="card-img-top" alt="site créé pour le projet 4 d'OpenClassrooms" />
+              <div class="card-body content-folio">
+                <h5 class="card-title">La Chouette Agence</h5>
+                <p class="card-text black">
+                  Projet numéro 4 d'OpenClassrooms consistant à modifier un
+                  site déjà existant pour le rendre plus accessible à tout le
+                  monde mais aussi pour faciliter son accessibilité via un
+                  moteur de recherche.
+                </p>
+                <div class="githublink">
+                  <a target="_blank" href="https://projet-4-v1.web.app" class="btn btn-primary link">Aller sur la
+                    première version du site →</a>
+                  <a target="_blank" href="https://projet-4-latest-version.web.app" class="btn btn-primary link">Aller
+                    sur la version optimisée du site →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="flex">
+            <div class="card folio">
+              <img src="./img/Orinoco.JPG" class="card-img-top" alt="site créé pour le projet 5 d'OpenClassrooms" />
+              <div class="card-body content-folio">
+                <h5 class="card-title">
+                  Orinoco
+                </h5>
+                <p class="card-text black">
+                  Le projet numéro 5 d'OpenClassrooms consistant à utiliser
+                  une api côté frontend pour une entreprise d'e-commerce.
+                </p>
+                <a target="_blank" href="https://github.com/Naitchi/Projet-5-OpenClassrooms"
+                  class="btn btn-primary linkGithub">Aller sur le repository
+                  <img class="logo linklogo" src="./img/GitHub_logo.png" alt="Logo Github" />Github du projet 5 →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="flex">
+            <div class="card folio">
+              <img src="./img/Piquante.JPG" class="card-img-top"
+                alt="site créé pour le projet 5 & 6 d'OpenClassrooms" />
+              <div class="card-body content-folio">
+                <h5 class="card-title">
+                  Piquante
+                </h5>
+                <p class="card-text black">
+                  Le projet numéro 6 d'OpenClassrooms consistant à créer une
+                  API REST pour gérer un système de comptes utilisateurs et de
+                  produits que les utilisateurs peuvent noter ou en ajouter si
+                  inexistant. Codé en node.js et avec MongoDB.
+                </p>
+                <a target="_blank" href="https://github.com/Naitchi/Projet-6-OpenClassrooms"
+                  class="btn btn-primary linkGithub">Aller sur le repository
+                  <img class="logo linklogo" src="./img/GitHub_logo.png" alt="Logo Github" />Github du projet 6 →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="flex">
+            <div class="card folio">
+              <img src="./img/P7.JPG" class="card-img-top" alt="site créé pour le projet 7 d'OpenClassrooms" />
+              <div class="card-body content-folio">
+                <h5 class="card-title">
+                  Groupamania
+                </h5>
+                <p class="card-text black">
+                  Le projet numéro 7 d'OpenClassrooms consiste à construire un
+                  réseau social avec VueJS et VueX mais également SQL, pour
+                  avoir une base de données plus gérable.
+                </p>
+                <div class="githublinks">
+                  <a target="_blank" href="https://github.com/Naitchi/frontend" class="btn btn-primary linkGithub">
+                    Aller sur le repository
+                    <img class="logo linklogo" src="./img/GitHub_logo.png" alt="Logo Github" />
+                    Github du frontend →
+                  </a>
+                  <a target="_blank" href="https://github.com/Naitchi/Projet-7-backend-OpenClassroom"
+                    class="btn btn-primary linkGithub">
+                    Aller sur le repository
+                    <img class="logo linklogo" src="./img/GitHub_logo.png" alt="Logo Github" />
+                    Github du backend →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="flex">
+            <div class="card folio">
+              <img src="./img/AmongLegends.JPG" class="card-img-top" alt="Site internet AmongLegends.gg" />
+              <div class="card-body content-folio">
+                <h5 class="card-title">
+                  AmongLegends
+                </h5>
+                <p class="card-text black">
+                  Site créé pour Solary qui permet aux gens de jouer à un
+                  autre mode du jeu League of Legends, où il faut trouver les
+                  intrus à la manière d'un "Among us". J'ai recréé le frontend
+                  du site en suivant la nouvelle maquette avec du PUG et du
+                  SASS.
+                </p>
+                <a target="_blank" href="http://amonglegends.gg/" class="btn btn-primary link">Aller sur le site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="flex">
+            <div class="card lastone ">
+              <h4 class="description">
+                Et bien d'autres en préparation et dans le futur... Vous
+                pouvez retrouver tous les codes source des sites présentés,
+                ils sont tous disponibles sur mon Github.
+              </h4>
+              <a target="_blank" href="https://github.com/Naitchi" class="network">
+                <img class="logo" src="./img/GitHub_logo.png" alt="Logo Github" />
+                Github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div id="recommandations">
+        <h3 class="h-recom">Recommandations<span class="green">.</span></h3>
+        <div class="r-content">
+          <div class="r-me">
+            <img class="pp" src="./img/ppPwcca.PNG" alt="Photo de Pwcca" />
+            <h4 class="nom">
+              Dylan Bouvier <span class="green">alias</span> Pwcca
+            </h4>
+            <h5 class="entreprise">
+              Community manager chez Solary, Streamer
+            </h5>
+            <p class="email">
+              dyl.bouvier<span class="green">@</span>gmail<span class="green">.</span>com
+            </p>
+          </div>
+          <div class="r-me">
+            <img class="pp" src="./img/JoffreyPP.webp" alt="Photo de Joffrey" />
+            <h4 class="nom">Joffrey Hernandez</h4>
+            <h5 class="entreprise">Mentor chez OpenClassrooms</h5>
+            <p class="email">
+              Joffrey.hernandez<span class="green">@</span>gmail<span class="green">.</span>com
+            </p>
+          </div>
+        </div>
+        <p class="p-recom">
+          Ayant déjà vu de quoi j'étais capable ils me recommandent et peuvent
+          se rendre disponibles pour répondre à vos questions me concernant
+          avant un éventuel recrutement.
+        </p>
+      </div>
+    </div>
+    <div class="section">
+      <div id="contact-me">
+        <h3 class="h-contact">Contact<span class="green">.</span></h3>
+        <p class="p-c">
+          Pour toute proposition de travail ou d'alternance je vous invite à
+          me contacter via mon email:
+          <span class="green"> benjaminclairottepro@gmail.com</span>
+          ci-dessous, ou au <span class="green">06.51.69.95.36</span>.
+        </p>
+        <div class="btn-contact">
+          <a class="btn btn-secondary send" href="mailto:benjaminclairottepro@gmail.com">
+            <i class="fas fa-envelope"></i>Contacter via email
+          </a>
+          <a class="btn btn-secondary send" href="tel:0651699536"><i class="fas fa-phone fa-rotate-90"></i>Contacter via
+            téléphone
+          </a>
+        </div>
+        <p class="l-network">
+          <span class="green">
+            Vous pouvez toujours me contacter sur mes</span>
+          <a href="#Qui_Suis-je">réseaux</a> <span class="green">.</span>
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <!--JS-->
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
+  <!--JS-->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCFyw5-_DeIRaefiptdwnA-mq8bQofK5Kw",
-        authDomain: "cv-benjaminclairotte.firebaseapp.com",
-        projectId: "cv-benjaminclairotte",
-        storageBucket: "cv-benjaminclairotte.appspot.com",
-        messagingSenderId: "346433025901",
-        appId: "1:346433025901:web:a4cde99a1087b37f300c64",
-        measurementId: "G-DQP52DZCZ0",
-      };
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCFyw5-_DeIRaefiptdwnA-mq8bQofK5Kw",
+      authDomain: "cv-benjaminclairotte.firebaseapp.com",
+      projectId: "cv-benjaminclairotte",
+      storageBucket: "cv-benjaminclairotte.appspot.com",
+      messagingSenderId: "346433025901",
+      appId: "1:346433025901:web:a4cde99a1087b37f300c64",
+      measurementId: "G-DQP52DZCZ0",
+    };
 
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
-    <script src="./js/script.js"></script>
-    <script src="./js/scrolloverflow.min.js"></script>
-    <script src="./js/fullpage.js"></script>
-    <script>
-      new fullpage("#fullpage", {
-        licenceKey: "22615C3F-6C8040EC-84C76444-1B91B7D0",
-        navigation: true,
-        continuousHorizontal: true,
-        parallax: true,
-        scrollingSpeed: 1000,
-        continuousVertical: true,
-        scrollOverflow: true,
-        navigationTooltips: [
-          "Sommaire",
-          "Qui suis-je ?",
-          "Mes compétences",
-          "Mes qualités",
-          "Portfolio",
-          "Recommandations",
-          "Contactez-moi",
-        ],
-        anchors: [
-          "Sommaire",
-          "Qui_Suis-je",
-          "Mes_Compétences",
-          "Mes_Qualités",
-          "Portefolio",
-          "Recommandation",
-          "Contact",
-        ],
-      });
-    </script>
-  </body>
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script src="./js/script.js"></script>
+  <script src="./js/scrolloverflow.min.js"></script>
+  <script src="./js/fullpage.js"></script>
+  <script>
+    new fullpage("#fullpage", {
+      licenceKey: "22615C3F-6C8040EC-84C76444-1B91B7D0",
+      navigation: true,
+      continuousHorizontal: true,
+      parallax: true,
+      scrollingSpeed: 1000,
+      continuousVertical: true,
+      scrollOverflow: true,
+      navigationTooltips: [
+        "Sommaire",
+        "Qui suis-je ?",
+        "Mes compétences",
+        "Mes qualités",
+        "Portfolio",
+        "Recommandations",
+        "Contactez-moi",
+      ],
+      anchors: [
+        "Sommaire",
+        "Qui_Suis-je",
+        "Mes_Compétences",
+        "Mes_Qualités",
+        "Portefolio",
+        "Recommandation",
+        "Contact",
+      ],
+    });
+  </script>
+</body>
+
 </html>

@@ -1,5 +1,5 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let particlesArray;
@@ -8,7 +8,7 @@ let mouse = {
   y: null,
   radius: (canvas.height / 110) * (canvas.width / 110),
 };
-window.addEventListener("mousemove", function(event) {
+window.addEventListener('mousemove', function(event) {
   mouse.x = event.x;
   mouse.y = event.y;
 });
@@ -24,7 +24,7 @@ class Particle {
   draw() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, !1);
-    ctx.fillStyle = "#ffffff";
+    ctx.fillStyle = '#ffffff';
     ctx.fill();
   }
   update() {
@@ -69,10 +69,8 @@ function init() {
     let y = Math.random() * (innerHeight - size * 2 - size * 2) + size * 2;
     let directionX = Math.random() * 2;
     let directionY = Math.random() * 2;
-    let color = "#ffffff";
-    particlesArray.push(
-      new Particle(x, y, directionX, directionY, size, color)
-    );
+    let color = '#ffffff';
+    particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
   }
   console.log(particlesArray);
 }
@@ -81,13 +79,11 @@ function connect() {
   for (let a = 0; a < particlesArray.length; a++) {
     for (let b = a; b < particlesArray.length; b++) {
       let distance =
-        (particlesArray[a].x - particlesArray[b].x) *
-          (particlesArray[a].x - particlesArray[b].x) +
-        (particlesArray[a].y - particlesArray[b].y) *
-          (particlesArray[a].y - particlesArray[b].y);
+        (particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x) +
+        (particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y);
       if (distance < (canvas.width / 14) * (canvas.height / 14)) {
         opacityValue = 1 - distance / 20000;
-        ctx.strokeStyle = "rgba(255,255,255," + opacityValue + ")";
+        ctx.strokeStyle = 'rgba(255,255,255,' + opacityValue + ')';
         ctx.beginPath();
         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
         ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
@@ -104,13 +100,13 @@ function animate() {
   }
   connect();
 }
-window.addEventListener("resize", function() {
+window.addEventListener('resize', function() {
   canvas.width = innerWidth;
   canvas.height = innerHeight;
   mouse.raduis = (canvas.height / 110) * (canvas.height / 110);
   init();
 });
-window.addEventListener("mouseout", function() {
+window.addEventListener('mouseout', function() {
   mouse.x = undefined;
   mouse.y = undefined;
 });
